@@ -37,7 +37,7 @@ Method | HTTP request | Description
 
 ## v2_assets_balance_post
 
-> models::V2AssetsBalancePost200Response v2_assets_balance_post(v2_assets_balance_post_request)
+> models::V2AssetsBalancePost200Response v2_assets_balance_post(f2_p_api_secret, v2_assets_balance_post_request)
 Fetch current user's asset details
 
 ### Parameters
@@ -45,6 +45,7 @@ Fetch current user's asset details
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_assets_balance_post_request** | [**V2AssetsBalancePostRequest**](V2AssetsBalancePostRequest.md) |  | [required] |
 
 ### Return type
@@ -65,7 +66,7 @@ No authorization required
 
 ## v2_assets_settle_mode_switch_post
 
-> models::V2AssetsSettleModeSwitchPost200Response v2_assets_settle_mode_switch_post(v2_assets_settle_mode_switch_post_request)
+> models::V2AssetsSettleModeSwitchPost200Response v2_assets_settle_mode_switch_post(f2_p_api_secret, v2_assets_settle_mode_switch_post_request)
 Switch settlement mode
 
 ### Parameters
@@ -73,6 +74,7 @@ Switch settlement mode
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_assets_settle_mode_switch_post_request** | [**V2AssetsSettleModeSwitchPostRequest**](V2AssetsSettleModeSwitchPostRequest.md) |  | [required] |
 
 ### Return type
@@ -93,7 +95,7 @@ No authorization required
 
 ## v2_assets_transactions_list_post
 
-> models::V2AssetsTransactionsListPost200Response v2_assets_transactions_list_post(v2_assets_transactions_list_post_request)
+> models::V2AssetsTransactionsListPost200Response v2_assets_transactions_list_post(f2_p_api_secret, v2_assets_transactions_list_post_request)
 Fetch bill list
 
 ### Parameters
@@ -101,6 +103,7 @@ Fetch bill list
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_assets_transactions_list_post_request** | [**V2AssetsTransactionsListPostRequest**](V2AssetsTransactionsListPostRequest.md) |  | [required] |
 
 ### Return type
@@ -121,7 +124,7 @@ No authorization required
 
 ## v2_blocks_date_range_post
 
-> models::V2BlocksPagingPost200Response v2_blocks_date_range_post(v2_blocks_date_range_post_request)
+> models::V2BlocksPagingPost200Response v2_blocks_date_range_post(f2_p_api_secret, v2_blocks_date_range_post_request)
 Get blocks list within a date range
 
 ### Parameters
@@ -129,6 +132,7 @@ Get blocks list within a date range
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_blocks_date_range_post_request** | [**V2BlocksDateRangePostRequest**](V2BlocksDateRangePostRequest.md) |  | [required] |
 
 ### Return type
@@ -149,7 +153,7 @@ No authorization required
 
 ## v2_blocks_paging_post
 
-> models::V2BlocksPagingPost200Response v2_blocks_paging_post(v2_blocks_paging_post_request)
+> models::V2BlocksPagingPost200Response v2_blocks_paging_post(f2_p_api_secret, v2_blocks_paging_post_request)
 Get blocks list with pagination
 
 ### Parameters
@@ -157,6 +161,7 @@ Get blocks list with pagination
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_blocks_paging_post_request** | [**V2BlocksPagingPostRequest**](V2BlocksPagingPostRequest.md) |  | [required] |
 
 ### Return type
@@ -177,7 +182,7 @@ No authorization required
 
 ## v2_hash_rate_distribute_post
 
-> models::HashRateDistributionOrder v2_hash_rate_distribute_post(v2_hash_rate_distribution_info_post_request)
+> models::HashRateDistributionOrder v2_hash_rate_distribute_post(f2_p_api_secret, v2_hash_rate_distribution_info_post_request)
 Distribute hashrate to an f2pool account
 
 ### Parameters
@@ -185,6 +190,7 @@ Distribute hashrate to an f2pool account
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_hash_rate_distribution_info_post_request** | [**V2HashRateDistributionInfoPostRequest**](V2HashRateDistributionInfoPostRequest.md) |  | [required] |
 
 ### Return type
@@ -205,7 +211,7 @@ No authorization required
 
 ## v2_hash_rate_distribution_info_post
 
-> models::V2HashRateDistributionInfoPost200Response v2_hash_rate_distribution_info_post(v2_hash_rate_distribution_info_post_request)
+> models::V2HashRateDistributionInfoPost200Response v2_hash_rate_distribution_info_post(f2_p_api_secret, v2_hash_rate_distribution_info_post_request)
 Hashrate distribution information
 
 ### Parameters
@@ -213,6 +219,7 @@ Hashrate distribution information
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_hash_rate_distribution_info_post_request** | [**V2HashRateDistributionInfoPostRequest**](V2HashRateDistributionInfoPostRequest.md) |  | [required] |
 
 ### Return type
@@ -233,7 +240,7 @@ No authorization required
 
 ## v2_hash_rate_distribution_orders_post
 
-> models::V2HashRateDistributionOrdersPost200Response v2_hash_rate_distribution_orders_post(v2_hash_rate_distribution_orders_post_request)
+> models::V2HashRateDistributionOrdersPost200Response v2_hash_rate_distribution_orders_post(f2_p_api_secret, v2_hash_rate_distribution_orders_post_request)
 List of all orders of hashrate distribution
 
 ### Parameters
@@ -241,6 +248,7 @@ List of all orders of hashrate distribution
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_hash_rate_distribution_orders_post_request** | [**V2HashRateDistributionOrdersPostRequest**](V2HashRateDistributionOrdersPostRequest.md) |  | [required] |
 
 ### Return type
@@ -261,7 +269,7 @@ No authorization required
 
 ## v2_hash_rate_distribution_settlements_post
 
-> models::V2HashRateDistributionSettlementsPost200Response v2_hash_rate_distribution_settlements_post(v2_hash_rate_distribution_orders_post_request)
+> models::V2HashRateDistributionSettlementsPost200Response v2_hash_rate_distribution_settlements_post(f2_p_api_secret, v2_hash_rate_distribution_orders_post_request)
 List of all settlements of hashrate distribution
 
 ### Parameters
@@ -269,6 +277,7 @@ List of all settlements of hashrate distribution
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_hash_rate_distribution_orders_post_request** | [**V2HashRateDistributionOrdersPostRequest**](V2HashRateDistributionOrdersPostRequest.md) |  | [required] |
 
 ### Return type
@@ -289,7 +298,7 @@ No authorization required
 
 ## v2_hash_rate_distribution_terminate_post
 
-> models::V2HashRateDistributionTerminatePost200Response v2_hash_rate_distribution_terminate_post(v2_hash_rate_distribution_terminate_post_request)
+> models::V2HashRateDistributionTerminatePost200Response v2_hash_rate_distribution_terminate_post(f2_p_api_secret, v2_hash_rate_distribution_terminate_post_request)
 Terminate hashrate distribution order
 
 ### Parameters
@@ -297,6 +306,7 @@ Terminate hashrate distribution order
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_hash_rate_distribution_terminate_post_request** | [**V2HashRateDistributionTerminatePostRequest**](V2HashRateDistributionTerminatePostRequest.md) |  | [required] |
 
 ### Return type
@@ -317,7 +327,7 @@ No authorization required
 
 ## v2_hash_rate_history_post
 
-> models::V2HashRateHistoryPost200Response v2_hash_rate_history_post(v2_hash_rate_history_post_request)
+> models::V2HashRateHistoryPost200Response v2_hash_rate_history_post(f2_p_api_secret, v2_hash_rate_history_post_request)
 Fetch hashrate historical data
 
 ### Parameters
@@ -325,6 +335,7 @@ Fetch hashrate historical data
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_hash_rate_history_post_request** | [**V2HashRateHistoryPostRequest**](V2HashRateHistoryPostRequest.md) |  | [required] |
 
 ### Return type
@@ -345,7 +356,7 @@ No authorization required
 
 ## v2_hash_rate_info_list_post
 
-> models::V2HashRateInfoListPost200Response v2_hash_rate_info_list_post(v2_hash_rate_info_list_post_request)
+> models::V2HashRateInfoListPost200Response v2_hash_rate_info_list_post(f2_p_api_secret, v2_hash_rate_info_list_post_request)
 Fetch hashrate information of multiple accounts
 
 ### Parameters
@@ -353,6 +364,7 @@ Fetch hashrate information of multiple accounts
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_hash_rate_info_list_post_request** | [**V2HashRateInfoListPostRequest**](V2HashRateInfoListPostRequest.md) |  | [required] |
 
 ### Return type
@@ -373,7 +385,7 @@ No authorization required
 
 ## v2_hash_rate_info_post
 
-> models::V2HashRateInfoPost200Response v2_hash_rate_info_post(v2_hash_rate_info_post_request)
+> models::V2HashRateInfoPost200Response v2_hash_rate_info_post(f2_p_api_secret, v2_hash_rate_info_post_request)
 Fetch hashrate information
 
 ### Parameters
@@ -381,6 +393,7 @@ Fetch hashrate information
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_hash_rate_info_post_request** | [**V2HashRateInfoPostRequest**](V2HashRateInfoPostRequest.md) |  | [required] |
 
 ### Return type
@@ -401,7 +414,7 @@ No authorization required
 
 ## v2_hash_rate_worker_history_post
 
-> models::V2HashRateHistoryPost200Response v2_hash_rate_worker_history_post(v2_hash_rate_worker_history_post_request)
+> models::V2HashRateHistoryPost200Response v2_hash_rate_worker_history_post(f2_p_api_secret, v2_hash_rate_worker_history_post_request)
 Fetch hashrate historical data of a worker
 
 ### Parameters
@@ -409,6 +422,7 @@ Fetch hashrate historical data of a worker
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_hash_rate_worker_history_post_request** | [**V2HashRateWorkerHistoryPostRequest**](V2HashRateWorkerHistoryPostRequest.md) |  | [required] |
 
 ### Return type
@@ -429,7 +443,7 @@ No authorization required
 
 ## v2_hash_rate_worker_list_post
 
-> models::V2HashRateWorkerListPost200Response v2_hash_rate_worker_list_post(v2_hash_rate_info_post_request)
+> models::V2HashRateWorkerListPost200Response v2_hash_rate_worker_list_post(f2_p_api_secret, v2_hash_rate_info_post_request)
 Fetch worker list
 
 ### Parameters
@@ -437,6 +451,7 @@ Fetch worker list
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_hash_rate_info_post_request** | [**V2HashRateInfoPostRequest**](V2HashRateInfoPostRequest.md) |  | [required] |
 
 ### Return type
@@ -457,7 +472,7 @@ No authorization required
 
 ## v2_mining_user_add_post
 
-> models::V2MiningUserAddPost200Response v2_mining_user_add_post(v2_mining_user_add_post_request)
+> models::V2MiningUserAddPost200Response v2_mining_user_add_post(f2_p_api_secret, v2_mining_user_add_post_request)
 Add new mining account
 
 ### Parameters
@@ -465,6 +480,7 @@ Add new mining account
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_mining_user_add_post_request** | [**V2MiningUserAddPostRequest**](V2MiningUserAddPostRequest.md) |  | [required] |
 
 ### Return type
@@ -485,7 +501,7 @@ No authorization required
 
 ## v2_mining_user_balance_withdraw_post
 
-> models::V2MiningUserBalanceWithdrawPost200Response v2_mining_user_balance_withdraw_post(v2_mining_user_balance_withdraw_post_request)
+> models::V2MiningUserBalanceWithdrawPost200Response v2_mining_user_balance_withdraw_post(f2_p_api_secret, v2_mining_user_balance_withdraw_post_request)
 Manual withdrawal
 
 ### Parameters
@@ -493,6 +509,7 @@ Manual withdrawal
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_mining_user_balance_withdraw_post_request** | [**V2MiningUserBalanceWithdrawPostRequest**](V2MiningUserBalanceWithdrawPostRequest.md) |  | [required] |
 
 ### Return type
@@ -513,7 +530,7 @@ No authorization required
 
 ## v2_mining_user_get_post
 
-> models::V2MiningUserGetPost200Response v2_mining_user_get_post(v2_mining_user_get_post_request)
+> models::V2MiningUserGetPost200Response v2_mining_user_get_post(f2_p_api_secret, v2_mining_user_get_post_request)
 Fetch account information
 
 ### Parameters
@@ -521,6 +538,7 @@ Fetch account information
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_mining_user_get_post_request** | [**V2MiningUserGetPostRequest**](V2MiningUserGetPostRequest.md) |  | [required] |
 
 ### Return type
@@ -541,12 +559,15 @@ No authorization required
 
 ## v2_mining_user_list_post
 
-> models::V2MiningUserListPost200Response v2_mining_user_list_post()
+> models::V2MiningUserListPost200Response v2_mining_user_list_post(f2_p_api_secret)
 List all mining accounts
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 
 ### Return type
 
@@ -566,7 +587,7 @@ No authorization required
 
 ## v2_mining_user_payment_pause_post
 
-> models::V2MiningUserWalletUpdatePost200Response v2_mining_user_payment_pause_post(v2_mining_user_payment_pause_post_request)
+> models::V2MiningUserWalletUpdatePost200Response v2_mining_user_payment_pause_post(f2_p_api_secret, v2_mining_user_payment_pause_post_request)
 Pause payment
 
 ### Parameters
@@ -574,6 +595,7 @@ Pause payment
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_mining_user_payment_pause_post_request** | [**V2MiningUserPaymentPausePostRequest**](V2MiningUserPaymentPausePostRequest.md) |  | [required] |
 
 ### Return type
@@ -594,7 +616,7 @@ No authorization required
 
 ## v2_mining_user_payment_resume_post
 
-> models::V2MiningUserWalletUpdatePost200Response v2_mining_user_payment_resume_post(v2_mining_user_payment_pause_post_request)
+> models::V2MiningUserWalletUpdatePost200Response v2_mining_user_payment_resume_post(f2_p_api_secret, v2_mining_user_payment_pause_post_request)
 Resume payment
 
 ### Parameters
@@ -602,6 +624,7 @@ Resume payment
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_mining_user_payment_pause_post_request** | [**V2MiningUserPaymentPausePostRequest**](V2MiningUserPaymentPausePostRequest.md) |  | [required] |
 
 ### Return type
@@ -622,7 +645,7 @@ No authorization required
 
 ## v2_mining_user_read_only_page_add_post
 
-> models::V2MiningUserReadOnlyPageAddPost200Response v2_mining_user_read_only_page_add_post(v2_mining_user_read_only_page_add_post_request)
+> models::V2MiningUserReadOnlyPageAddPost200Response v2_mining_user_read_only_page_add_post(f2_p_api_secret, v2_mining_user_read_only_page_add_post_request)
 Create read-only page
 
 ### Parameters
@@ -630,6 +653,7 @@ Create read-only page
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_mining_user_read_only_page_add_post_request** | [**V2MiningUserReadOnlyPageAddPostRequest**](V2MiningUserReadOnlyPageAddPostRequest.md) |  | [required] |
 
 ### Return type
@@ -650,7 +674,7 @@ No authorization required
 
 ## v2_mining_user_read_only_page_delete_post
 
-> models::V2MiningUserGetPostRequest v2_mining_user_read_only_page_delete_post(v2_mining_user_read_only_page_delete_post_request)
+> models::V2MiningUserGetPostRequest v2_mining_user_read_only_page_delete_post(f2_p_api_secret, v2_mining_user_read_only_page_delete_post_request)
 Delete read-only page
 
 ### Parameters
@@ -658,6 +682,7 @@ Delete read-only page
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_mining_user_read_only_page_delete_post_request** | [**V2MiningUserReadOnlyPageDeletePostRequest**](V2MiningUserReadOnlyPageDeletePostRequest.md) |  | [required] |
 
 ### Return type
@@ -678,7 +703,7 @@ No authorization required
 
 ## v2_mining_user_threshold_update_post
 
-> models::V2MiningUserThresholdUpdatePost200Response v2_mining_user_threshold_update_post(v2_mining_user_threshold_update_post_request)
+> models::V2MiningUserThresholdUpdatePost200Response v2_mining_user_threshold_update_post(f2_p_api_secret, v2_mining_user_threshold_update_post_request)
 Change payout threshold
 
 ### Parameters
@@ -686,6 +711,7 @@ Change payout threshold
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_mining_user_threshold_update_post_request** | [**V2MiningUserThresholdUpdatePostRequest**](V2MiningUserThresholdUpdatePostRequest.md) |  | [required] |
 
 ### Return type
@@ -706,7 +732,7 @@ No authorization required
 
 ## v2_mining_user_wallet_update_post
 
-> models::V2MiningUserWalletUpdatePost200Response v2_mining_user_wallet_update_post(v2_mining_user_wallet_update_post_request)
+> models::V2MiningUserWalletUpdatePost200Response v2_mining_user_wallet_update_post(f2_p_api_secret, v2_mining_user_wallet_update_post_request)
 Modify wallet address
 
 ### Parameters
@@ -714,6 +740,7 @@ Modify wallet address
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_mining_user_wallet_update_post_request** | [**V2MiningUserWalletUpdatePostRequest**](V2MiningUserWalletUpdatePostRequest.md) |  | [required] |
 
 ### Return type
@@ -734,7 +761,7 @@ No authorization required
 
 ## v2_revenue_distribution_add_post
 
-> models::V2RevenueDistributionAddPost200Response v2_revenue_distribution_add_post(v2_revenue_distribution_add_post_request)
+> models::V2RevenueDistributionAddPost200Response v2_revenue_distribution_add_post(f2_p_api_secret, v2_revenue_distribution_add_post_request)
 Distribute revenue to an f2pool account
 
 ### Parameters
@@ -742,6 +769,7 @@ Distribute revenue to an f2pool account
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_revenue_distribution_add_post_request** | [**V2RevenueDistributionAddPostRequest**](V2RevenueDistributionAddPostRequest.md) |  | [required] |
 
 ### Return type
@@ -762,7 +790,7 @@ No authorization required
 
 ## v2_revenue_distribution_delete_post
 
-> models::V2HashRateDistributionTerminatePost200Response v2_revenue_distribution_delete_post(v2_revenue_distribution_delete_post_request)
+> models::V2HashRateDistributionTerminatePost200Response v2_revenue_distribution_delete_post(f2_p_api_secret, v2_revenue_distribution_delete_post_request)
 Terminate revenue distribution record
 
 ### Parameters
@@ -770,6 +798,7 @@ Terminate revenue distribution record
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_revenue_distribution_delete_post_request** | [**V2RevenueDistributionDeletePostRequest**](V2RevenueDistributionDeletePostRequest.md) |  | [required] |
 
 ### Return type
@@ -790,7 +819,7 @@ No authorization required
 
 ## v2_revenue_distribution_info_post
 
-> models::V2RevenueDistributionInfoPost200Response v2_revenue_distribution_info_post(v2_revenue_distribution_info_post_request)
+> models::V2RevenueDistributionInfoPost200Response v2_revenue_distribution_info_post(f2_p_api_secret, v2_revenue_distribution_info_post_request)
 Get revenue distribution information
 
 ### Parameters
@@ -798,6 +827,7 @@ Get revenue distribution information
 
 Name | Type | Description  | Required | Notes
 ------------- | ------------- | ------------- | ------------- | -------------
+**f2_p_api_secret** | **String** |  | [required] |
 **v2_revenue_distribution_info_post_request** | [**V2RevenueDistributionInfoPostRequest**](V2RevenueDistributionInfoPostRequest.md) |  | [required] |
 
 ### Return type

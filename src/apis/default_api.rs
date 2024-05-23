@@ -17,162 +17,195 @@ use super::{Error, configuration};
 /// struct for passing parameters to the method [`v2_assets_balance_post`]
 #[derive(Clone, Debug)]
 pub struct V2AssetsBalancePostParams {
+    pub f2_p_api_secret: String,
     pub v2_assets_balance_post_request: models::V2AssetsBalancePostRequest
 }
 
 /// struct for passing parameters to the method [`v2_assets_settle_mode_switch_post`]
 #[derive(Clone, Debug)]
 pub struct V2AssetsSettleModeSwitchPostParams {
+    pub f2_p_api_secret: String,
     pub v2_assets_settle_mode_switch_post_request: models::V2AssetsSettleModeSwitchPostRequest
 }
 
 /// struct for passing parameters to the method [`v2_assets_transactions_list_post`]
 #[derive(Clone, Debug)]
 pub struct V2AssetsTransactionsListPostParams {
+    pub f2_p_api_secret: String,
     pub v2_assets_transactions_list_post_request: models::V2AssetsTransactionsListPostRequest
 }
 
 /// struct for passing parameters to the method [`v2_blocks_date_range_post`]
 #[derive(Clone, Debug)]
 pub struct V2BlocksDateRangePostParams {
+    pub f2_p_api_secret: String,
     pub v2_blocks_date_range_post_request: models::V2BlocksDateRangePostRequest
 }
 
 /// struct for passing parameters to the method [`v2_blocks_paging_post`]
 #[derive(Clone, Debug)]
 pub struct V2BlocksPagingPostParams {
+    pub f2_p_api_secret: String,
     pub v2_blocks_paging_post_request: models::V2BlocksPagingPostRequest
 }
 
 /// struct for passing parameters to the method [`v2_hash_rate_distribute_post`]
 #[derive(Clone, Debug)]
 pub struct V2HashRateDistributePostParams {
+    pub f2_p_api_secret: String,
     pub v2_hash_rate_distribution_info_post_request: models::V2HashRateDistributionInfoPostRequest
 }
 
 /// struct for passing parameters to the method [`v2_hash_rate_distribution_info_post`]
 #[derive(Clone, Debug)]
 pub struct V2HashRateDistributionInfoPostParams {
+    pub f2_p_api_secret: String,
     pub v2_hash_rate_distribution_info_post_request: models::V2HashRateDistributionInfoPostRequest
 }
 
 /// struct for passing parameters to the method [`v2_hash_rate_distribution_orders_post`]
 #[derive(Clone, Debug)]
 pub struct V2HashRateDistributionOrdersPostParams {
+    pub f2_p_api_secret: String,
     pub v2_hash_rate_distribution_orders_post_request: models::V2HashRateDistributionOrdersPostRequest
 }
 
 /// struct for passing parameters to the method [`v2_hash_rate_distribution_settlements_post`]
 #[derive(Clone, Debug)]
 pub struct V2HashRateDistributionSettlementsPostParams {
+    pub f2_p_api_secret: String,
     pub v2_hash_rate_distribution_orders_post_request: models::V2HashRateDistributionOrdersPostRequest
 }
 
 /// struct for passing parameters to the method [`v2_hash_rate_distribution_terminate_post`]
 #[derive(Clone, Debug)]
 pub struct V2HashRateDistributionTerminatePostParams {
+    pub f2_p_api_secret: String,
     pub v2_hash_rate_distribution_terminate_post_request: models::V2HashRateDistributionTerminatePostRequest
 }
 
 /// struct for passing parameters to the method [`v2_hash_rate_history_post`]
 #[derive(Clone, Debug)]
 pub struct V2HashRateHistoryPostParams {
+    pub f2_p_api_secret: String,
     pub v2_hash_rate_history_post_request: models::V2HashRateHistoryPostRequest
 }
 
 /// struct for passing parameters to the method [`v2_hash_rate_info_list_post`]
 #[derive(Clone, Debug)]
 pub struct V2HashRateInfoListPostParams {
+    pub f2_p_api_secret: String,
     pub v2_hash_rate_info_list_post_request: models::V2HashRateInfoListPostRequest
 }
 
 /// struct for passing parameters to the method [`v2_hash_rate_info_post`]
 #[derive(Clone, Debug)]
 pub struct V2HashRateInfoPostParams {
+    pub f2_p_api_secret: String,
     pub v2_hash_rate_info_post_request: models::V2HashRateInfoPostRequest
 }
 
 /// struct for passing parameters to the method [`v2_hash_rate_worker_history_post`]
 #[derive(Clone, Debug)]
 pub struct V2HashRateWorkerHistoryPostParams {
+    pub f2_p_api_secret: String,
     pub v2_hash_rate_worker_history_post_request: models::V2HashRateWorkerHistoryPostRequest
 }
 
 /// struct for passing parameters to the method [`v2_hash_rate_worker_list_post`]
 #[derive(Clone, Debug)]
 pub struct V2HashRateWorkerListPostParams {
+    pub f2_p_api_secret: String,
     pub v2_hash_rate_info_post_request: models::V2HashRateInfoPostRequest
 }
 
 /// struct for passing parameters to the method [`v2_mining_user_add_post`]
 #[derive(Clone, Debug)]
 pub struct V2MiningUserAddPostParams {
+    pub f2_p_api_secret: String,
     pub v2_mining_user_add_post_request: models::V2MiningUserAddPostRequest
 }
 
 /// struct for passing parameters to the method [`v2_mining_user_balance_withdraw_post`]
 #[derive(Clone, Debug)]
 pub struct V2MiningUserBalanceWithdrawPostParams {
+    pub f2_p_api_secret: String,
     pub v2_mining_user_balance_withdraw_post_request: models::V2MiningUserBalanceWithdrawPostRequest
 }
 
 /// struct for passing parameters to the method [`v2_mining_user_get_post`]
 #[derive(Clone, Debug)]
 pub struct V2MiningUserGetPostParams {
+    pub f2_p_api_secret: String,
     pub v2_mining_user_get_post_request: models::V2MiningUserGetPostRequest
+}
+
+/// struct for passing parameters to the method [`v2_mining_user_list_post`]
+#[derive(Clone, Debug)]
+pub struct V2MiningUserListPostParams {
+    pub f2_p_api_secret: String
 }
 
 /// struct for passing parameters to the method [`v2_mining_user_payment_pause_post`]
 #[derive(Clone, Debug)]
 pub struct V2MiningUserPaymentPausePostParams {
+    pub f2_p_api_secret: String,
     pub v2_mining_user_payment_pause_post_request: models::V2MiningUserPaymentPausePostRequest
 }
 
 /// struct for passing parameters to the method [`v2_mining_user_payment_resume_post`]
 #[derive(Clone, Debug)]
 pub struct V2MiningUserPaymentResumePostParams {
+    pub f2_p_api_secret: String,
     pub v2_mining_user_payment_pause_post_request: models::V2MiningUserPaymentPausePostRequest
 }
 
 /// struct for passing parameters to the method [`v2_mining_user_read_only_page_add_post`]
 #[derive(Clone, Debug)]
 pub struct V2MiningUserReadOnlyPageAddPostParams {
+    pub f2_p_api_secret: String,
     pub v2_mining_user_read_only_page_add_post_request: models::V2MiningUserReadOnlyPageAddPostRequest
 }
 
 /// struct for passing parameters to the method [`v2_mining_user_read_only_page_delete_post`]
 #[derive(Clone, Debug)]
 pub struct V2MiningUserReadOnlyPageDeletePostParams {
+    pub f2_p_api_secret: String,
     pub v2_mining_user_read_only_page_delete_post_request: models::V2MiningUserReadOnlyPageDeletePostRequest
 }
 
 /// struct for passing parameters to the method [`v2_mining_user_threshold_update_post`]
 #[derive(Clone, Debug)]
 pub struct V2MiningUserThresholdUpdatePostParams {
+    pub f2_p_api_secret: String,
     pub v2_mining_user_threshold_update_post_request: models::V2MiningUserThresholdUpdatePostRequest
 }
 
 /// struct for passing parameters to the method [`v2_mining_user_wallet_update_post`]
 #[derive(Clone, Debug)]
 pub struct V2MiningUserWalletUpdatePostParams {
+    pub f2_p_api_secret: String,
     pub v2_mining_user_wallet_update_post_request: models::V2MiningUserWalletUpdatePostRequest
 }
 
 /// struct for passing parameters to the method [`v2_revenue_distribution_add_post`]
 #[derive(Clone, Debug)]
 pub struct V2RevenueDistributionAddPostParams {
+    pub f2_p_api_secret: String,
     pub v2_revenue_distribution_add_post_request: models::V2RevenueDistributionAddPostRequest
 }
 
 /// struct for passing parameters to the method [`v2_revenue_distribution_delete_post`]
 #[derive(Clone, Debug)]
 pub struct V2RevenueDistributionDeletePostParams {
+    pub f2_p_api_secret: String,
     pub v2_revenue_distribution_delete_post_request: models::V2RevenueDistributionDeletePostRequest
 }
 
 /// struct for passing parameters to the method [`v2_revenue_distribution_info_post`]
 #[derive(Clone, Debug)]
 pub struct V2RevenueDistributionInfoPostParams {
+    pub f2_p_api_secret: String,
     pub v2_revenue_distribution_info_post_request: models::V2RevenueDistributionInfoPostRequest
 }
 
@@ -406,6 +439,7 @@ pub async fn v2_assets_balance_post(configuration: &configuration::Configuration
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_assets_balance_post_request = params.v2_assets_balance_post_request;
 
 
@@ -417,6 +451,7 @@ pub async fn v2_assets_balance_post(configuration: &configuration::Configuration
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_assets_balance_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -438,6 +473,7 @@ pub async fn v2_assets_settle_mode_switch_post(configuration: &configuration::Co
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_assets_settle_mode_switch_post_request = params.v2_assets_settle_mode_switch_post_request;
 
 
@@ -449,6 +485,7 @@ pub async fn v2_assets_settle_mode_switch_post(configuration: &configuration::Co
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_assets_settle_mode_switch_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -470,6 +507,7 @@ pub async fn v2_assets_transactions_list_post(configuration: &configuration::Con
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_assets_transactions_list_post_request = params.v2_assets_transactions_list_post_request;
 
 
@@ -481,6 +519,7 @@ pub async fn v2_assets_transactions_list_post(configuration: &configuration::Con
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_assets_transactions_list_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -502,6 +541,7 @@ pub async fn v2_blocks_date_range_post(configuration: &configuration::Configurat
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_blocks_date_range_post_request = params.v2_blocks_date_range_post_request;
 
 
@@ -513,6 +553,7 @@ pub async fn v2_blocks_date_range_post(configuration: &configuration::Configurat
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_blocks_date_range_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -534,6 +575,7 @@ pub async fn v2_blocks_paging_post(configuration: &configuration::Configuration,
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_blocks_paging_post_request = params.v2_blocks_paging_post_request;
 
 
@@ -545,6 +587,7 @@ pub async fn v2_blocks_paging_post(configuration: &configuration::Configuration,
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_blocks_paging_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -566,6 +609,7 @@ pub async fn v2_hash_rate_distribute_post(configuration: &configuration::Configu
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_hash_rate_distribution_info_post_request = params.v2_hash_rate_distribution_info_post_request;
 
 
@@ -577,6 +621,7 @@ pub async fn v2_hash_rate_distribute_post(configuration: &configuration::Configu
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_hash_rate_distribution_info_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -598,6 +643,7 @@ pub async fn v2_hash_rate_distribution_info_post(configuration: &configuration::
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_hash_rate_distribution_info_post_request = params.v2_hash_rate_distribution_info_post_request;
 
 
@@ -609,6 +655,7 @@ pub async fn v2_hash_rate_distribution_info_post(configuration: &configuration::
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_hash_rate_distribution_info_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -630,6 +677,7 @@ pub async fn v2_hash_rate_distribution_orders_post(configuration: &configuration
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_hash_rate_distribution_orders_post_request = params.v2_hash_rate_distribution_orders_post_request;
 
 
@@ -641,6 +689,7 @@ pub async fn v2_hash_rate_distribution_orders_post(configuration: &configuration
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_hash_rate_distribution_orders_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -662,6 +711,7 @@ pub async fn v2_hash_rate_distribution_settlements_post(configuration: &configur
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_hash_rate_distribution_orders_post_request = params.v2_hash_rate_distribution_orders_post_request;
 
 
@@ -673,6 +723,7 @@ pub async fn v2_hash_rate_distribution_settlements_post(configuration: &configur
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_hash_rate_distribution_orders_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -694,6 +745,7 @@ pub async fn v2_hash_rate_distribution_terminate_post(configuration: &configurat
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_hash_rate_distribution_terminate_post_request = params.v2_hash_rate_distribution_terminate_post_request;
 
 
@@ -705,6 +757,7 @@ pub async fn v2_hash_rate_distribution_terminate_post(configuration: &configurat
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_hash_rate_distribution_terminate_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -726,6 +779,7 @@ pub async fn v2_hash_rate_history_post(configuration: &configuration::Configurat
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_hash_rate_history_post_request = params.v2_hash_rate_history_post_request;
 
 
@@ -737,6 +791,7 @@ pub async fn v2_hash_rate_history_post(configuration: &configuration::Configurat
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_hash_rate_history_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -758,6 +813,7 @@ pub async fn v2_hash_rate_info_list_post(configuration: &configuration::Configur
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_hash_rate_info_list_post_request = params.v2_hash_rate_info_list_post_request;
 
 
@@ -769,6 +825,7 @@ pub async fn v2_hash_rate_info_list_post(configuration: &configuration::Configur
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_hash_rate_info_list_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -790,6 +847,7 @@ pub async fn v2_hash_rate_info_post(configuration: &configuration::Configuration
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_hash_rate_info_post_request = params.v2_hash_rate_info_post_request;
 
 
@@ -801,6 +859,7 @@ pub async fn v2_hash_rate_info_post(configuration: &configuration::Configuration
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_hash_rate_info_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -822,6 +881,7 @@ pub async fn v2_hash_rate_worker_history_post(configuration: &configuration::Con
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_hash_rate_worker_history_post_request = params.v2_hash_rate_worker_history_post_request;
 
 
@@ -833,6 +893,7 @@ pub async fn v2_hash_rate_worker_history_post(configuration: &configuration::Con
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_hash_rate_worker_history_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -854,6 +915,7 @@ pub async fn v2_hash_rate_worker_list_post(configuration: &configuration::Config
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_hash_rate_info_post_request = params.v2_hash_rate_info_post_request;
 
 
@@ -865,6 +927,7 @@ pub async fn v2_hash_rate_worker_list_post(configuration: &configuration::Config
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_hash_rate_info_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -886,6 +949,7 @@ pub async fn v2_mining_user_add_post(configuration: &configuration::Configuratio
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_mining_user_add_post_request = params.v2_mining_user_add_post_request;
 
 
@@ -897,6 +961,7 @@ pub async fn v2_mining_user_add_post(configuration: &configuration::Configuratio
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_mining_user_add_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -918,6 +983,7 @@ pub async fn v2_mining_user_balance_withdraw_post(configuration: &configuration:
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_mining_user_balance_withdraw_post_request = params.v2_mining_user_balance_withdraw_post_request;
 
 
@@ -929,6 +995,7 @@ pub async fn v2_mining_user_balance_withdraw_post(configuration: &configuration:
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_mining_user_balance_withdraw_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -950,6 +1017,7 @@ pub async fn v2_mining_user_get_post(configuration: &configuration::Configuratio
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_mining_user_get_post_request = params.v2_mining_user_get_post_request;
 
 
@@ -961,6 +1029,7 @@ pub async fn v2_mining_user_get_post(configuration: &configuration::Configuratio
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_mining_user_get_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -978,10 +1047,11 @@ pub async fn v2_mining_user_get_post(configuration: &configuration::Configuratio
     }
 }
 
-pub async fn v2_mining_user_list_post(configuration: &configuration::Configuration) -> Result<models::V2MiningUserListPost200Response, Error<V2MiningUserListPostError>> {
+pub async fn v2_mining_user_list_post(configuration: &configuration::Configuration, params: V2MiningUserListPostParams) -> Result<models::V2MiningUserListPost200Response, Error<V2MiningUserListPostError>> {
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
 
 
     let local_var_client = &local_var_configuration.client;
@@ -992,6 +1062,7 @@ pub async fn v2_mining_user_list_post(configuration: &configuration::Configurati
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
 
     let local_var_req = local_var_req_builder.build()?;
     let local_var_resp = local_var_client.execute(local_var_req).await?;
@@ -1012,6 +1083,7 @@ pub async fn v2_mining_user_payment_pause_post(configuration: &configuration::Co
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_mining_user_payment_pause_post_request = params.v2_mining_user_payment_pause_post_request;
 
 
@@ -1023,6 +1095,7 @@ pub async fn v2_mining_user_payment_pause_post(configuration: &configuration::Co
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_mining_user_payment_pause_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -1044,6 +1117,7 @@ pub async fn v2_mining_user_payment_resume_post(configuration: &configuration::C
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_mining_user_payment_pause_post_request = params.v2_mining_user_payment_pause_post_request;
 
 
@@ -1055,6 +1129,7 @@ pub async fn v2_mining_user_payment_resume_post(configuration: &configuration::C
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_mining_user_payment_pause_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -1076,6 +1151,7 @@ pub async fn v2_mining_user_read_only_page_add_post(configuration: &configuratio
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_mining_user_read_only_page_add_post_request = params.v2_mining_user_read_only_page_add_post_request;
 
 
@@ -1087,6 +1163,7 @@ pub async fn v2_mining_user_read_only_page_add_post(configuration: &configuratio
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_mining_user_read_only_page_add_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -1108,6 +1185,7 @@ pub async fn v2_mining_user_read_only_page_delete_post(configuration: &configura
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_mining_user_read_only_page_delete_post_request = params.v2_mining_user_read_only_page_delete_post_request;
 
 
@@ -1119,6 +1197,7 @@ pub async fn v2_mining_user_read_only_page_delete_post(configuration: &configura
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_mining_user_read_only_page_delete_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -1140,6 +1219,7 @@ pub async fn v2_mining_user_threshold_update_post(configuration: &configuration:
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_mining_user_threshold_update_post_request = params.v2_mining_user_threshold_update_post_request;
 
 
@@ -1151,6 +1231,7 @@ pub async fn v2_mining_user_threshold_update_post(configuration: &configuration:
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_mining_user_threshold_update_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -1172,6 +1253,7 @@ pub async fn v2_mining_user_wallet_update_post(configuration: &configuration::Co
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_mining_user_wallet_update_post_request = params.v2_mining_user_wallet_update_post_request;
 
 
@@ -1183,6 +1265,7 @@ pub async fn v2_mining_user_wallet_update_post(configuration: &configuration::Co
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_mining_user_wallet_update_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -1204,6 +1287,7 @@ pub async fn v2_revenue_distribution_add_post(configuration: &configuration::Con
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_revenue_distribution_add_post_request = params.v2_revenue_distribution_add_post_request;
 
 
@@ -1215,6 +1299,7 @@ pub async fn v2_revenue_distribution_add_post(configuration: &configuration::Con
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_revenue_distribution_add_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -1236,6 +1321,7 @@ pub async fn v2_revenue_distribution_delete_post(configuration: &configuration::
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_revenue_distribution_delete_post_request = params.v2_revenue_distribution_delete_post_request;
 
 
@@ -1247,6 +1333,7 @@ pub async fn v2_revenue_distribution_delete_post(configuration: &configuration::
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_revenue_distribution_delete_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
@@ -1268,6 +1355,7 @@ pub async fn v2_revenue_distribution_info_post(configuration: &configuration::Co
     let local_var_configuration = configuration;
 
     // unbox the parameters
+    let f2_p_api_secret = params.f2_p_api_secret;
     let v2_revenue_distribution_info_post_request = params.v2_revenue_distribution_info_post_request;
 
 
@@ -1279,6 +1367,7 @@ pub async fn v2_revenue_distribution_info_post(configuration: &configuration::Co
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
     }
+    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
     local_var_req_builder = local_var_req_builder.json(&v2_revenue_distribution_info_post_request);
 
     let local_var_req = local_var_req_builder.build()?;
