@@ -917,20 +917,22 @@ pub async fn v2_hash_rate_worker_list_post(configuration: &configuration::Config
     // unbox the parameters
     let f2_p_api_secret = params.f2_p_api_secret;
     let v2_hash_rate_info_post_request = params.v2_hash_rate_info_post_request;
-
-
+    
+    
     let local_var_client = &local_var_configuration.client;
-
+    
     let local_var_uri_str = format!("{}/v2/hash_rate/worker/list", local_var_configuration.base_path);
     let mut local_var_req_builder = local_var_client.request(reqwest::Method::POST, local_var_uri_str.as_str());
-
+    
     if let Some(ref local_var_user_agent) = local_var_configuration.user_agent {
         local_var_req_builder = local_var_req_builder.header(reqwest::header::USER_AGENT, local_var_user_agent.clone());
-    }
-    local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
-    local_var_req_builder = local_var_req_builder.json(&v2_hash_rate_info_post_request);
-
-    let local_var_req = local_var_req_builder.build()?;
+        }
+        local_var_req_builder = local_var_req_builder.header("F2P-API-secret", f2_p_api_secret.to_string());
+        local_var_req_builder = local_var_req_builder.json(&v2_hash_rate_info_post_request);
+        
+        println!("Building request");
+        let local_var_req = local_var_req_builder.build()?;
+        println!("Request built");
     let local_var_resp = local_var_client.execute(local_var_req).await?;
 
     let local_var_status = local_var_resp.status();
