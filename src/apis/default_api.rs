@@ -912,8 +912,8 @@ pub async fn v2_hash_rate_worker_history_post(configuration: &configuration::Con
 }
 
 pub async fn v2_hash_rate_worker_list_post(configuration: &configuration::Configuration, params: V2HashRateWorkerListPostParams) -> Result<models::V2HashRateWorkerListPost200Response, Error<V2HashRateWorkerListPostError>> {
+    println!("Getting worker list");
     let local_var_configuration = configuration;
-
     // unbox the parameters
     let f2_p_api_secret = params.f2_p_api_secret;
     let v2_hash_rate_info_post_request = params.v2_hash_rate_info_post_request;
