@@ -14,28 +14,24 @@ use crate::models;
 /// Worker status
 #[derive(Clone, Copy, Debug, Eq, PartialEq, Ord, PartialOrd, Hash, Serialize, Deserialize)]
 pub enum WorkerStatus {
-    #[serde(rename = "0")]
-    Variant0,
-    #[serde(rename = "1")]
-    Variant1,
-    #[serde(rename = "2")]
-    Variant2,
-
+    Online = 0,
+    Offline = 1,
+    Expired = 2,
 }
 
 impl ToString for WorkerStatus {
     fn to_string(&self) -> String {
         match self {
-            Self::Variant0 => String::from("0"),
-            Self::Variant1 => String::from("1"),
-            Self::Variant2 => String::from("2"),
+            Self::Online => String::from("0"),
+            Self::Offline => String::from("1"),
+            Self::Expired => String::from("2"),
         }
     }
 }
 
 impl Default for WorkerStatus {
     fn default() -> WorkerStatus {
-        Self::Variant0
+        Self::Online
     }
 }
 
