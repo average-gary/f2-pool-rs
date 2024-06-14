@@ -18,7 +18,7 @@ pub struct WorkerMiningInfo {
     #[serde(rename = "last_share_at", skip_serializing_if = "Option::is_none")]
     pub last_share_at: Option<i64>,
     #[serde(rename = "status", skip_serializing_if = "Option::is_none")]
-    pub status: Option<models::WorkerStatus>,
+    pub status: Option<usize>,
     /// The public IP address
     #[serde(rename = "host", skip_serializing_if = "Option::is_none")]
     pub host: Option<String>,
